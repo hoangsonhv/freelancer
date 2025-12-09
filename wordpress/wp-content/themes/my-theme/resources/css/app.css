@@ -1,0 +1,5 @@
+@import "tailwindcss" theme(static);
+@import "../style/livescore.css";
+
+@source "../views/";
+@source "../../app/";

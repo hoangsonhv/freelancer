@@ -1,0 +1,100 @@
+.livescore-wrapper {
+  width: 100%;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Tabs */
+.ls-tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.ls-tabs button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ls-tabs button.active {
+  background: #e8e8e8;
+}
+
+.ls-tabs button.live {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* Competition header */
+.ls-competition {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.ls-competition .comp-logo {
+  width: 18px;
+  margin-right: 8px;
+}
+
+/* Match row */
+.ls-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 50px 1fr 80px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ls-row:hover {
+  background: #fafafa;
+}
+
+.ls-time {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.ls-live-status.live {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* Teams */
+.ls-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.team-logo {
+  width: 22px;
+  height: 22px;
+}
+
+/* Score */
+.ls-score {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score-home, .score-away {
+  min-width: 16px;
+  display: inline-block;
+}
+
+/* Extra info */
+.ls-last {
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+}
