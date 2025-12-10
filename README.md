@@ -247,7 +247,7 @@ Tạo thư mục theme Sage:
   "Database\\": "database/"
   }`
 - Tạo dữ liệu mẫu: wp acorn db:seed --allow-root
-- Lưu ý: Cần cấp quyền cho các file mới tạo: `chmod -R 775 database`
+- Lưu ý: Cần cấp quyền cho các file mới tạo: `chmod -R 775 *folder namne*`
 
 **11. Build theme Sage**
 - docker exec -it php-wp bash
@@ -256,9 +256,11 @@ Tạo thư mục theme Sage:
 - yarn install
 - yarn build
 
-**7. Truy cập trang web**
+**12. Truy cập trang web**
 
 | Service    | URL                                            |
 | ---------- | ---------------------------------------------- |
 | WordPress  | [http://localhost:8888](http://localhost:8888) |
 | phpMyAdmin | [http://localhost:8081](http://localhost:8081) |
+
+- Vào http://localhost:8081/index.php?route=/sql&pos=0&db=wordpress&table=wp_options đổi `siteurl` và `home` thành `http://localhost:8888`
